@@ -1,0 +1,152 @@
+/*Style untuk halaman Login*/
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: sans-serif;
+	margin: 0;
+	background: #555;
+}
+
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.login-box{
+	margin-top: 150px;
+	flex-basis: 400px;
+	background:#00FFFF;
+	padding: 20px;
+}
+
+.login-box h2{
+	border-bottom: 1px solid #ccc;
+	color: #555;
+	text-align: center;
+	padding-bottom: 20px;
+	margin: 0 0 20px;
+}
+
+input, select{
+	width: 100%;
+	padding: 15px 20px;
+	margin: 8px 0;
+	border: 1px solid #ccc;
+}
+
+input[type=submit] {
+	background-color: #03ade;
+	border: none;
+	color: #555;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/*DASBOARD*/
+/*mengatur desain header*/
+header{
+	background: #038ade;
+	color: #fff;
+	padding: 15px 20px;
+	font-size: 20px;
+}
+/*mengatur lebar menu 20% dengan background hitam*/
+aside{
+	flex: 20%;
+	background: #222;
+}
+/*mengatur lebar konten utama 80% dengan background putih*/
+section.main{
+	flex: 80%;
+	background: #fff;
+	min-height: 530px;
+	padding: 15px 20px;
+}
+/*mengatur footer dengan background abu-abu dan teka di tengah*/ 
+footer{
+	background: #ccc;
+	color: #555;
+	padding: 20px;
+	text-align: center;
+}
+/*mengatur layout pada layar kecil (responsive)*/
+@media (max-width: 700px){
+.container {
+	flex-direction: column;
+}
+}
+/*navigasi*/
+/*membuang padding tal <ul> */
+.menu{
+	padding: 0;
+}
+
+.menu li{
+	border-bottom: 1px dotted #444;
+}
+
+.menu a{
+	display: block;
+	padding: 20px 20px;
+	list-style: none;
+	color: #fff;
+	text-decoration: none;
+}
+
+.menu a:hover{
+	background: #000;
+}
+
+/*TABEL DASBOARD*/
+.judul{
+	background: #000;
+	color: #555;
+	padding: 20px;
+	text-align: center;
+}
+.table{
+	width: 100%;
+	margin-top: 20px;
+	border-collapse: 15px;
+}
+.table th, table td{
+	border: 1px solid #ccc;
+	padding: 77px;
+}
+.table th{
+	background: #eee;
+}
+
+/*form*/
+.form-group {
+	clear: both;
+}
+.form-group label{
+display: block;
+	padding: 15px 0;
+	float: left;
+	width: 30%;
+	font-weight: bold;	
+}
+.form-group,.input{
+	display: block;
+	width: 50%;
+	float: left;
+}
+.tombol.simpan{
+	background: #038ade;
+}
+.tombol.reset{
+	background: #fb8307;
+}
+@media (max-width: 700px){
+.form-group label, form-group.input{
+	width: 100%;
+}
+}
+
+
